@@ -11,6 +11,7 @@ onBeforeMount(async() => {
 </script>
 
 <template>
+
   <RouterView />
 </template>
 

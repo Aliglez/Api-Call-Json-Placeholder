@@ -9,10 +9,11 @@ export default class UserService {
         this.repository = repository
     }
 
-    async index() {
+    async index(): Promise<User[]> {
         const users = await this.repository.getAll()
+        console.log(this.repository.getAll())
 
-        users.forEach((user: { id: number; name: string; username: string; email: string }) => {
+        users.forEach((user: any) => {
             const userToAdd = new User(user.id, user.name, user.username, user.email)
             this.users.push(userToAdd)
             

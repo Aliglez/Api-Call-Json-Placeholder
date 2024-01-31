@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import type UserCardVue from '@/components/UserCard.vue';
+
+
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+
+    <UserCardVue />
+
   </main>
 </template>
