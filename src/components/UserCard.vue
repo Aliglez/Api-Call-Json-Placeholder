@@ -13,9 +13,9 @@ userStore.setUsers();
                 
             <tr>
                 <div v-if="userStore.isLoaded" class="users-card" v-for="users in userStore.users" :key="users.id" id="data_contain">
-                    <td id="celda"><h3>{{ users.name }}</h3></td>
+                    <td id="celda"><h3>{{ users.id }}</h3></td>
                     <td id="celda"><h3>{{ users.username }}</h3></td>
-                    <td id="celda"><h3>{{ users.email }}</h3></td>
+                    <td id="celda"><h3>{{ users.city }}</h3></td>
                 </div>
             </tr>
            

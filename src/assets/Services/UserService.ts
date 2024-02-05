@@ -13,7 +13,7 @@ export default class UserService {
         const users = await this.repository.getAll()
 
         users.forEach((user: any) => {
-            const userToAdd = new User(user.id, user.name, user.username, user.email)
+            const userToAdd = new User(user.id, user.name, user.username, user.email, user.address.city)
             this.users.push(userToAdd)
             
         });
