@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import type UserCardVue from '@/components/UserCard.vue';
+import UserCard from '@/components/UserCard.vue';
+
+
+
+
 
 
 </script>
@@ -7,7 +11,7 @@ import type UserCardVue from '@/components/UserCard.vue';
 <template>
   <main>
 
-    <UserCardVue />
+    <UserCard/>
 
   </main>
 </template>

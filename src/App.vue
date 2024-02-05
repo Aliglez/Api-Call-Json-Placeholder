@@ -6,7 +6,7 @@ import { onBeforeMount } from 'vue';
 const usersStore = useUserStore()
 
 onBeforeMount(async() => {
-  await usersStore.SetUsers()
+  await usersStore.setUsers()
 })
 </script>
 

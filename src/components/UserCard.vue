@@ -3,13 +3,14 @@ import { useUserStore } from '@/stores/userStore';
 
 
 const userStore = useUserStore();
-userStore.SetUsers();
+userStore.setUsers();
 
 
 </script>
+
 <template>
     <div class="users">
-        <div class="users-card" v-for="users in userStore.users" :key="users.id">
+        <div v-if="userStore.isLoaded" class="users-card" v-for="users in userStore.users" :key="users.id">
             <h2>Nombre: {{ users.name }}</h2>
             <h2>Username: {{ users.username }}</h2>
             <h2>Email: {{ users.email }}</h2>
