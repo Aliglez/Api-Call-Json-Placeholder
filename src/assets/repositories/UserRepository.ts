@@ -3,7 +3,7 @@ import type { URL } from "url";
 
 export default class UserRepository {
     
-    //uri: string | URL | Request = import.meta.env.API_ENDPOINT_PLACEHOLDER
+    // uri: string | URL | Request = import.meta.env.API_ENDPOINT_PLACEHOLDER
     uri: string | URL | Request = 'https://jsonplaceholder.typicode.com/users'
 
     async getAll(){
